@@ -1,5 +1,47 @@
 {% extends 'index.html' %}
+{% load static %}
 
 {%block home%}
-<h1>Primeira página Soldados do Sebold!!!</h1>
+<div class="container text-center" style="padding-top: 30px;">
+    <div class="row">
+        <div class="col-8 text-start">
+            <a href="/Landhaus"><h1 class="fw-bold" style="color:black">Landhaus-AW</h1></a>
+            <p>
+                Se localiza próximo ao centro, no caminho para os Soldados do Sebold. Este lugar é perfeito para quem
+                procura tranquilidade e gosta de contato com a natureza, totalmente reservado e com belas paisagens.
+            </p>
+        </div>
+        <div class="col-4"><img src="{% static '/img/Landhaus/frenteArvores.jpeg' %}" class="d-block w-100" alt="..." /></div>
+    </div>
+</div>
+<div class="container text-center" style="padding-top: 30px;">
+    <div class="row">
+        <div class="col-8 text-start">
+            <h1><a href="/ChaleSoldadosSebold">Chalé Soldados do Sebold</a></h1>
+            <p>
+                Precisa de uma pausa na rotina? Esse é o lugar certo para você! É um chalé para a família, preparado
+                para
+                receber até 6 pessoas. Muito bem equipado, com todos os utensílios de cozinha, camas confortáveis, uma
+                suíte, área para home office e sala com vista para os Soldados.
+                Aqui a aventura é garantida com diversas trilhas para você fazer a poucos metros do Chalé.
+            </p>
+        </div>
+        <div class="col-4"><img src="{% static '/img/ChaleSoldadosdoSebold/frente.jpg' %}" class="d-block w-100" alt="..." /></div>
+    </div>
+</div>
+<div class="container text-center" style="padding-top: 30px;">
+    <div class="row">
+        <div class="col-8 text-start">
+            <h1><a href="/CasaSoldadosSebold">Casa Soldados do Sebold</a></h1>
+            <p>
+                Localizada bem em frente as montanhas e rodeada por araucárias, esta casa tem uma das vistas mais
+                bonitas
+                de Alfredo Wagner. É um local perfeito para quem busca conforto longe da cidade e fica melhor ainda em
+                dias frios, se aquecendo em volta do fogão a lenha. A casa abriga confortavelmente 8 pessoas e tem uma
+                área de festa bem legal para reunir a família e os amigos.
+            </p>
+        </div>
+        <div class="col-4"><img src="{% static '/img/CasaSoldadosdoSebold/frenteSoldados.jpg' %}" class="d-block w-100" alt="..." /></div>
+    </div>
+</div>
 {% endblock home%}
