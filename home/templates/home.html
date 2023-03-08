@@ -1,47 +1,161 @@
 {% extends 'index.html' %}
 {% load static %}
 
-{%block home%}
+{%block conteudo%}
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="4"
+            aria-label="Slide 5"></button>
+    </div>
+    <div class="carousel-inner" style="height: 450px;">
+        <div class="carousel-item active" data-bs-interval="3000">
+            <img src="{% static '/img/Carrossel/teste1.jpg' %}" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+            <img src="{% static '/img/Carrossel/teste2.jpg' %}" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+            <img src="{% static '/img/Carrossel/teste3.jpg' %}" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+            <img src="{% static '/img/Carrossel/teste4.jpg' %}" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+            <img src="{% static '/img/Carrossel/teste5.jpg' %}" class="d-block w-100" alt="..." />
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
 <div class="container text-center" style="padding-top: 30px;">
     <div class="row">
-        <div class="col-8 text-start">
-            <a href="/Landhaus"><h1 class="fw-bold" style="color:black">Landhaus-AW</h1></a>
-            <p>
-                Se localiza próximo ao centro, no caminho para os Soldados do Sebold. Este lugar é perfeito para quem
-                procura tranquilidade e gosta de contato com a natureza, totalmente reservado e com belas paisagens.
-            </p>
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title text-start">
+                            <a href="/Landhaus">
+                                <h1 class="fw-bold">Landhaus-AW</h1>
+                            </a>
+                        </h5>
+                        <p class="card-text fs-5 text-start">
+                            Casa de campo localizada próximo ao centro, no caminho para os Soldados do Sebold. Este
+                            lugar é
+                            perfeito
+                            para quem
+                            procura tranquilidade e uma vista incrível para curtir com os amigos ou em família.
+                            Atrai os
+                            visitantes
+                            por ter um belo pôr do Sol e cachoeiras
+                            reservadas dentro da propriedade, possibilitando os hóspedes de aproveitarem ao máximo
+                            sua estadia.
+                        </p>
+                        <p class="card-text text-start">
+                            <small class="text-muted">
+                                <a href="/Landhaus">
+                                    Clique aqui para saber mais...
+                                </a>
+                            </small>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <img src="{% static '/img/Landhaus/frenteArvores.jpeg' %}" class="d-block w-100" />
+                </div>
+            </div>
         </div>
-        <div class="col-4"><img src="{% static '/img/Landhaus/frenteArvores.jpeg' %}" class="d-block w-100" alt="..." /></div>
     </div>
-</div>
-<div class="container text-center" style="padding-top: 30px;">
+
     <div class="row">
-        <div class="col-8 text-start">
-            <h1><a href="/ChaleSoldadosSebold">Chalé Soldados do Sebold</a></h1>
-            <p>
-                Precisa de uma pausa na rotina? Esse é o lugar certo para você! É um chalé para a família, preparado
-                para
-                receber até 6 pessoas. Muito bem equipado, com todos os utensílios de cozinha, camas confortáveis, uma
-                suíte, área para home office e sala com vista para os Soldados.
-                Aqui a aventura é garantida com diversas trilhas para você fazer a poucos metros do Chalé.
-            </p>
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title text-start">
+                            <a href="/chaleSoldadosdoSebold">
+                                <h1 class="fw-bold">Chalé Soldados do Sebold</h1>
+                            </a>
+                        </h5>
+                        <p class="card-text fs-5 text-start">
+                            Precisa de uma pausa na rotina? Esse é o lugar certo para você! É um chalé para a
+                            família, preparado
+                            para
+                            receber até 6 pessoas. Muito bem equipado, com todos os utensílios de cozinha, camas
+                            confortáveis,
+                            uma
+                            suíte, área para home office e sala com vista para os Soldados.
+                            Aqui a aventura é garantida com diversas trilhas para você fazer a poucos metros do
+                            Chalé.
+                        </p>
+                        <p class="card-text text-start">
+                            <small class="text-muted">
+                                <a href="/chaleSoldadosdoSebold">
+                                    Clique aqui para saber mais...
+                                </a>
+                            </small>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="{% static '/img/ChaleSoldadosdoSebold/frente.jpg' %}" class="d-block w-100" />
+                </div>
+            </div>
         </div>
-        <div class="col-4"><img src="{% static '/img/ChaleSoldadosdoSebold/frente.jpg' %}" class="d-block w-100" alt="..." /></div>
     </div>
-</div>
-<div class="container text-center" style="padding-top: 30px;">
+
     <div class="row">
-        <div class="col-8 text-start">
-            <h1><a href="/CasaSoldadosSebold">Casa Soldados do Sebold</a></h1>
-            <p>
-                Localizada bem em frente as montanhas e rodeada por araucárias, esta casa tem uma das vistas mais
-                bonitas
-                de Alfredo Wagner. É um local perfeito para quem busca conforto longe da cidade e fica melhor ainda em
-                dias frios, se aquecendo em volta do fogão a lenha. A casa abriga confortavelmente 8 pessoas e tem uma
-                área de festa bem legal para reunir a família e os amigos.
-            </p>
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title text-start">
+                            <a href="/casaSoldadosdoSebold">
+                                <h1 class="fw-bold">Casa Soldados do Sebold</h1>
+                            </a>
+                        </h5>
+                        <p class="card-text fs-5 text-start">
+                            Localizada bem em frente as montanhas e rodeada por araucárias, esta casa tem uma das vistas
+                            mais
+                            bonitas
+                            de Alfredo Wagner. É um local perfeito para quem busca conforto longe da cidade e fica
+                            melhor ainda
+                            em
+                            dias frios, se aquecendo em volta do fogão a lenha. A casa abriga confortavelmente 8 pessoas
+                            e tem
+                            uma
+                            área de festa bem legal para reunir a família e os amigos.
+                        </p>
+                        <p class="card-text text-start">
+                            <small class="text-muted">
+                                <a href="/casaSoldadosdoSebold">
+                                    Clique aqui para saber mais...
+                                </a>
+                            </small>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="{% static '/img/CasaSoldadosdoSebold/frenteSoldados.jpg' %}" class="d-block w-100" />
+                </div>
+            </div>
         </div>
-        <div class="col-4"><img src="{% static '/img/CasaSoldadosdoSebold/frenteSoldados.jpg' %}" class="d-block w-100" alt="..." /></div>
     </div>
 </div>
-{% endblock home%}
+{% endblock conteudo%}
