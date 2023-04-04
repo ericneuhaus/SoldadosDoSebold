@@ -29,8 +29,32 @@
             transition: all .2s ease-in-out
         }
 
-        #button:hover{
+        #button:hover {
             top: -6px;
+        }
+
+        .element {
+            scrollbar-width: thin;
+            scrollbar-color: black transparent;
+        }
+
+        .element::-webkit-scrollbar {
+            width: 3px;
+            height: 3px;
+            
+        }
+
+        .element::-webkit-scrollbar-track {
+            background: transparent;
+            padding: 2px;
+        }
+
+        .element::-webkit-scrollbar-thumb {
+            background-color: #000;
+        }
+
+        .body{
+            overflow    : scroll;
         }
     </style>
 
@@ -38,14 +62,14 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar fixed-top" style="background-color: #0c8a1d;">
+    <nav class="navbar navbar-expand-lg navbar sticky-top" style="background-color: #0c8a1d;">
         <div class="container-fluid">
             <div class="d-none d-sm-block">
-                <a class="navbar-brand" id="logo" href="">
+                <a class="navbar-brand" id="logo" href="/">
                     <img src="{% static '/img/Icons/logoSoldadosSemFundoTotal.png' %}"
-                        onmouseover="this.src='{% static "/img/Icons/logoSoldadosSemFundo.png" %}'" 
-                        onmouseleave="this.src='{% static "/img/Icons/logoSoldadosSemFundoTotal.png" %}'"
-                        width="150px" height="50px"></img>
+                        onmouseover="this.src='{% static "/img/Icons/logoSoldadosSemFundo.png" %}'"
+                        onmouseleave="this.src='{% static "/img/Icons/logoSoldadosSemFundoTotal.png" %}'" width="150px"
+                        height="50px"></img>
                 </a>
             </div>
             <a class="navbar-brand" href="/">Soldados do Sebold</a>
@@ -68,17 +92,18 @@
                         <a class="btn btn-outline-light btn-floating mt-2 mb-1" role="button" style=" height:100%;"
                             href="/historia/">História</a>
                     </li>
-                    <li class="nav-item px-md-1" id="button"    >
+                    <li class="nav-item px-md-1" id="button">
                         <a class="btn btn-outline-light btn-floating mt-2 mb-1" role="button" style=" height:100%;"
                             href="/momentos">Momentos</a>
                     </li>
                 </ul>
             </div>
         </div>
-        <div style="background-color: white; height: 4px; width: 100%; position:absolute; bottom: 0%;"></div>
+        <div style="background-color: #077215; height: 4px; width: 100%; position:absolute; bottom: 0%;"></div>
     </nav>
-
-    {% block conteudo %}{% endblock conteudo %}
+    <div style="">
+        {% block conteudo %}{% endblock conteudo %}
+    </div>
 
     <footer class="bg-dark text-center text-white">
         <div class="container p-4 pb-0">

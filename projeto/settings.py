@@ -39,6 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'historia.apps.HistoriaConfig',
     'home.apps.HomeConfig',
+    'landhaus.apps.LandhausConfig',
+    'chaleSoldadosSebold.apps.ChalesoldadosseboldConfig',
+    'casaSoldadosSebold.apps.CasasoldadosseboldConfig',
+    'comoChegar.apps.ComochegarConfig',
+    'trilhas.apps.TrilhasConfig',
+    'momentos.apps.MomentosConfig',
 ]
 
 MIDDLEWARE = [

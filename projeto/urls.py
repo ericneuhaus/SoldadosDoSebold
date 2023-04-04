@@ -20,5 +20,11 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('home.urls')),
     path('historia/', include('historia.urls')),
+    path('landhaus/', include('landhaus.urls')),
+    path('chaleSoldadosSebold/', include('chaleSoldadosSebold.urls')),
+    path('casaSoldadosSebold/', include('casaSoldadosSebold.urls')),
+    path('comoChegar/', include('comoChegar.urls')),
+    path('trilhas/', include('trilhas.urls')),
+    path('momentos/', include('momentos.urls')),
 ]
 
