@@ -2,5 +2,61 @@
 {% load static %}
 
 {%block conteudo%}
-<h1>Teste Landhaus</h1>
+<div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators" style="z-index: 3;">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active" >
+            <div style="z-index: 2; position: relative;">
+                <img src="{% static '/img/Landhaus/ImgLand2.jpg' %}" class="d-block w-50 mx-auto" style="width: 100%;">
+            </div>
+            <div style="top: 0%; z-index: 1; position: absolute; width: 100%; filter: blur(3px);">
+                <img src="{% static '/img/Landhaus/ImgLand2.jpg' %}" class="d-block mx-auto" style="width: 100%;">
+            </div>
+            <div class="carousel-caption d-none d-md-block" style="z-index: 3;">
+                <h5>Conheça a Landhaus</h5>
+                <p>Saiba um pouquinho mais sobre essa casa mais que aconchegante. Você vai se surpreender!</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div style="z-index: 2; position: relative;">
+                <img src="{% static '/img/Landhaus/ImgLand3.jpg' %}" class="d-block w-50 mx-auto" style="width: 100%;">
+            </div>
+            <div style="top: 0%; z-index: 1; position: absolute; width: 100%; filter: blur(3px);">
+                <img src="{% static '/img/Landhaus/ImgLand3.jpg' %}" class="d-block mx-auto" style="width: 100%;">
+            </div>
+            <div class="carousel-caption d-none d-md-block" style="z-index: 3;">
+                <h5>O por do Sol</h5>
+                <p>Esse pedacinho da Landhaus vai para todos os amantes de pores do sol!</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div style="z-index: 2; position: relative;">
+                <img src="{% static '/img/Landhaus/ImgLand8.jpg' %}" class="d-block w-50 mx-auto" style="width: 100%;">
+            </div>
+            <div style="top: 0%; z-index: 1; position: absolute; width: 100%; filter: blur(3px);">
+                <img src="{% static '/img/Landhaus/ImgLand8.jpg' %}" class="d-block mx-auto" style="width: 100%;">
+            </div>
+            <div class="carousel-caption d-none d-md-block" style="z-index: 3;">
+                <h5>O por do Sol</h5>
+                <p>Esse pedacinho da Landhaus vai para todos os amantes de pores do sol!</p>
+            </div>
+        </div>
+    </div>
+    <button style="z-index: 3;" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button style="z-index: 3;" class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<h1>teste Eric</h1>
 {%endblock conteudo%}

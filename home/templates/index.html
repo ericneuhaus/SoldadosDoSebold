@@ -33,28 +33,17 @@
             top: -6px;
         }
 
-        .element {
-            scrollbar-width: thin;
-            scrollbar-color: black transparent;
+        #img_anim {
+            transition: 0.5s;
         }
 
-        .element::-webkit-scrollbar {
-            width: 3px;
-            height: 3px;
-            
+        #img_anim:hover {
+            transform: scale(1.1);
         }
 
-        .element::-webkit-scrollbar-track {
-            background: transparent;
-            padding: 2px;
-        }
-
-        .element::-webkit-scrollbar-thumb {
-            background-color: #000;
-        }
-
-        .body{
-            overflow    : scroll;
+        .img{
+            width: 1080px !important;  
+            height: 810px !important; 
         }
     </style>
 
@@ -101,7 +90,7 @@
         </div>
         <div style="background-color: #077215; height: 4px; width: 100%; position:absolute; bottom: 0%;"></div>
     </nav>
-    <div style="">
+    <div>
         {% block conteudo %}{% endblock conteudo %}
     </div>
 
